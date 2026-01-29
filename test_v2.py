@@ -128,6 +128,7 @@ data_aggr = data_aggr.sort_values(['YEAR', 'MONTH_LABEL'])
 
 # --- DASH APP ---
 app = dash.Dash(__name__)
+server = app.server
 
 # Style pour les blocs (Cards) occupant toute la largeur
 STRATE_STYLE = {
@@ -362,4 +363,4 @@ def update_dashboard(sun_app, sun_ents, time_app, comp_yr, comp_apps, yr_ca, yr_
     return fig_sun, fig_time, fig_comp, fig_ca_pie, fig_vol_pie, fig_pareto, kpi_clients, kpi_ca
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

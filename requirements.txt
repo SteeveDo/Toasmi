@@ -1,0 +1,7 @@
+dash
+pandas
+plotly
+openpyxl
+thefuzz
+python-Levenshtein
+gunicorn
